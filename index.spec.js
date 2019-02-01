@@ -18,7 +18,7 @@ describe('The APIs Endpoints', function() {
 
         it('should always not return an string data ', async () => {
             const response = await request(server).get('/games');
-            expect(Array.isArray(response.body)).toBeFalsy();
+            expect(response.type).not.toMatch(/html/i);
         });
         
         it('should return JSON date', async () => {
