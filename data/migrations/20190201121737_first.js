@@ -9,13 +9,13 @@ exports.up = function(knex, Promise) {
 
     tbl.string('genre', 128).notNullable();
 
-    tbl.integer('releaseDate', 128)
+    tbl.integer('releaseYear', 128)
  });
   
 };
 
 exports.down = function(knex, Promise) {
-    
+
     return knex.schema.dropTableIfExists('games');
   
 };
