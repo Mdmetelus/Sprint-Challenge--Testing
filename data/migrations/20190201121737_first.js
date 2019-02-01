@@ -10,6 +10,7 @@ exports.up = function(knex, Promise) {
     tbl.string('genre', 128).notNullable();
 
     tbl.integer('releaseYear', 128)
+    
  });
   
 };
