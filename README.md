@@ -30,7 +30,7 @@ describe allows us to segnrnt our  code into blocks of tests that are begun with
 
 1. What is the point of `Test Driven Development`? What do you think about this approach?
 
-A great approach that will save time on very large projects. it allows us to  create the test first then impliment the functionallity of the code second. it also allows us to more easily spot regression in code.
+TDD is a style of development where tests are created before the code itself. A great approach that will save time on very large projects. it allows us to  create the test first then impliment the functionallity of the code second. it also allows us to more easily spot regression in code.
 
 1. Mention three types of automated tests.
 
