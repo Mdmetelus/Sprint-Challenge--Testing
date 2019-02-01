@@ -1,9 +1,9 @@
 const request = require('supertest');
 const server = require('./server');
+const db= require('./data/dbConfig');
 
 
 describe('The APIs Endpoints', function() {
-
 
     describe('GET / games route', () => {
 
@@ -31,6 +31,11 @@ describe('The APIs Endpoints', function() {
 
 
     describe('POST /games route', () => {
+        
+        afterEach(async() => {
+            await db('games').truncate();
+        });
+    
 
         it('should return status code of 201 when working correctly', async () => {
             let response = await request(server)

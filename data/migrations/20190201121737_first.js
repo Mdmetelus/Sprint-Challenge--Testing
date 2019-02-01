@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
 
     tbl.increments();
 
-    tbl.string('title', 128).notNullable().unique();
+    tbl.string('title', 128).notNullable();
 
     tbl.string('genre', 128).notNullable();
 
